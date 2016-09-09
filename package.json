@@ -26,9 +26,9 @@
     "NativeScript",
     "ecosystem:nativescript",
     "iOS",
-    "taptic engine",
-    "taptic",
-    "vibration"
+    "Taptic Engine",
+    "Taptic",
+    "Vibration"
   ],
   "author": {
     "name": "Eddy Verbruggen",
