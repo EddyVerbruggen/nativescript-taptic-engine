@@ -35,7 +35,7 @@ var tapticEngine = new TapticEngine();
 
 tapticEngine.weakBoom().then(
   function() {
-    // note that unsupported iOS devices like the simulator also end up here, at the moment
+    // note that unsupported iOS devices like the simulator also end up here
     console.log("Boomed weakly, if available.");
   }, function () {
     console.log("You're running on Android. Meh.");
@@ -52,7 +52,7 @@ import {TapticEngine} from "nativescript-taptic-engine";
 let tapticEngine = new TapticEngine();
 
 tapticEngine.weakBoom().then(() => {
-  // note that unsupported iOS devices like the simulator also end up here, at the moment
+  // note that unsupported iOS devices like the simulator also end up here
 }, (err) => {
   console.log("You're running on Android. Meh.");
 });
