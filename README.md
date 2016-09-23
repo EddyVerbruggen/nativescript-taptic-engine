@@ -20,7 +20,7 @@ Want to dive in quickly? Check out [the demo app](demo)! Otherwise, continue rea
 
 You can run the demo app from the root of the project by typing `npm run demo.ios.device` and you'll see this:
 
-<img src="https://raw.githubusercontent.com/EddyVerbruggen/nativescript-taptic-engine/master/demo-app.png" height="350px"/>
+<img src="https://raw.githubusercontent.com/EddyVerbruggen/nativescript-taptic-engine/master/demo-app.png" width="375px"/>
 
 
 ## API
