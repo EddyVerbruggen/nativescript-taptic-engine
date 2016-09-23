@@ -6,13 +6,16 @@
   "typings": "index.d.ts",
   "nativescript": {
     "platforms": {
-      "android": "2.2.0",
-      "ios": "2.2.1"
+      "android": "2.3.0",
+      "ios": "2.3.0"
+    },
+    "tns-ios": {
+      "version": "2.3.0"
     }
   },
   "scripts": {
     "build": "tsc",
-    "demo.ios": "npm run preparedemo && cd demo && tns emulate ios --device \"iPhone 6s\"",
+    "demo.ios": "npm run preparedemo && cd demo && tns emulate ios --device \"iPhone 7\"",
     "demo.ios.device": "npm run preparedemo && cd demo && tns run ios",
     "demo.android": "npm run preparedemo && cd demo && tns run android",
     "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-taptic-engine && tns plugin add .. && tns install",
@@ -44,8 +47,11 @@
   "homepage": "https://github.com/EddyVerbruggen/nativescript-taptic-engine",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "tns-core-modules": "^2.2.0",
-    "tns-platform-declarations": "^2.2.0",
+    "tns-core-modules": "^2.3.0",
+    "tns-platform-declarations": "^2.3.0",
     "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "tns-core-modules": "^2.3.0"
   }
 }

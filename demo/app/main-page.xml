@@ -1,9 +1,22 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
-  <StackLayout>
-    <Image margin="20" src="~/res/taptic-engine.jpg" />
-    <Label text="If your iOS device has a Taptic Engine you will feel it vibrate when you press one of these buttons." class="message" textWrap="true"/>
-    <Button text="weak boom (peek)" tap="{{ doWeakBoom }}" cssClass="button button-weakboom" />
-    <Button text="strong boom (pop)" tap="{{ doStrongBoom }}" cssClass="button button-strongboom" />
-    <Button text="burst (nope!)" tap="{{ doBurst }}" cssClass="button button-burst" />
-  </StackLayout>
+    <StackLayout>
+      <Image margin="12" src="~/res/taptic-engine.jpg" />
+      <Label text="Official API, supported from iPhone 7" class="message" textWrap="true"/>
+      <GridLayout columns="*, 106, 94" rows="auto">
+        <Button col="0" text="notification: success" tap="{{ doNotificationSuccess }}" cssClass="button button-notification-success" />
+        <Button col="1" text="warn" tap="{{ doNotificationWarning }}" cssClass="button button-notification-warning" />
+        <Button col="2" text="error" tap="{{ doNotificationError }}" cssClass="button button-notification-error" />
+      </GridLayout>
+      <GridLayout columns="*, 106, 94" rows="auto">
+        <Button col="0" text="impact: light" tap="{{ doImpactLight }}" cssClass="button button-impact-light" />
+        <Button col="1" text="medium" tap="{{ doImpactMedium }}" cssClass="button button-impact-medium" />
+        <Button col="2" text="heavy" tap="{{ doImpactHeavy }}" cssClass="button button-impact-heavy" />
+      </GridLayout>
+      <Button text="selection" tap="{{ doSelection }}" cssClass="button button-selection" />
+
+      <Label text="Unofficial API, supported from iPhone 6s" class="message" textWrap="true"/>
+      <Button text="weak boom (peek)" tap="{{ doWeakBoom }}" cssClass="button button-weakboom" />
+      <Button text="strong boom (pop)" tap="{{ doStrongBoom }}" cssClass="button button-strongboom" />
+      <Button text="burst (nope!)" tap="{{ doBurst }}" cssClass="button button-burst" />
+    </StackLayout>
 </Page>
