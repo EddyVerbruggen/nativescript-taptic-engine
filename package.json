@@ -23,15 +23,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/YourName/nativescript-taptic-engine.git"
+    "url": "https://github.com/EddyVerbruggen/nativescript-taptic-engine.git"
   },
   "keywords": [
     "NativeScript",
     "ecosystem:nativescript",
     "iOS",
-    "taptic engine",
-    "taptic",
-    "vibration"
+    "Taptic Engine",
+    "Taptic",
+    "Vibration"
   ],
   "author": {
     "name": "Eddy Verbruggen",

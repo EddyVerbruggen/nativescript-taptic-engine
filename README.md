@@ -3,7 +3,7 @@
 > __BEWARE__ This plugin uses an undocumented feature which may get your app rejected when reviewed by Apple. Once Apple releases an official API this plugin will be updated of course. [People have used this approach __without problems__ though.](http://stackoverflow.com/questions/32526868/taptic-in-ios-9)
 
 
-<img src="taptic-6s-plus.jpg" width="541px" height="350px"/>
+<img src="https://raw.githubusercontent.com/EddyVerbruggen/nativescript-taptic-engine/master/taptic-6s-plus.jpg" width="541px" height="350px"/>
 
 ### Supported platforms
 * iPhone 6s / 6s Plus or newer
@@ -35,7 +35,7 @@ var tapticEngine = new TapticEngine();
 
 tapticEngine.weakBoom().then(
   function() {
-    // note that unsupported iOS devices like the simulator also end up here, at the moment
+    // note that unsupported iOS devices like the simulator also end up here
     console.log("Boomed weakly, if available.");
   }, function () {
     console.log("You're running on Android. Meh.");
@@ -52,7 +52,7 @@ import {TapticEngine} from "nativescript-taptic-engine";
 let tapticEngine = new TapticEngine();
 
 tapticEngine.weakBoom().then(() => {
-  // note that unsupported iOS devices like the simulator also end up here, at the moment
+  // note that unsupported iOS devices like the simulator also end up here
 }, (err) => {
   console.log("You're running on Android. Meh.");
 });
