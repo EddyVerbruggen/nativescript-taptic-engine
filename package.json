@@ -1,6 +1,6 @@
 {
   "name": "nativescript-taptic-engine",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Taptic Engine, the subtle iPhone vibration engine. Available since iPhone 6s (Plus).",
   "main": "taptic-engine",
   "typings": "index.d.ts",
