@@ -9,7 +9,7 @@
     }
   },
   "dependencies": {
-    "nativescript-taptic-engine": "file:///Users/eddyverbruggen/sandboxes/nativescript-taptic-engine",
+    "nativescript-taptic-engine": "file:..",
     "tns-core-modules": "^3.0.0"
   },
   "devDependencies": {
