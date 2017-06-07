@@ -1,5 +1,18 @@
 # NativeScript Taptic Engine plugin
 
+[![Build Status][build-status]][build-url]
+[![NPM version][npm-image]][npm-url]
+[![Downloads][downloads-image]][npm-url]
+[![Twitter Follow][twitter-image]][twitter-url]
+
+[build-status]:https://travis-ci.org/EddyVerbruggen/nativescript-taptic-engine.svg?branch=master
+[build-url]:https://travis-ci.org/EddyVerbruggen/nativescript-taptic-engine
+[npm-image]:http://img.shields.io/npm/v/nativescript-taptic-engine.svg
+[npm-url]:https://npmjs.org/package/nativescript-taptic-engine
+[downloads-image]:http://img.shields.io/npm/dm/nativescript-taptic-engine.svg
+[twitter-image]:https://img.shields.io/twitter/follow/eddyverbruggen.svg?style=social&label=Follow%20me
+[twitter-url]:https://twitter.com/eddyverbruggen
+
 <img src="https://raw.githubusercontent.com/EddyVerbruggen/nativescript-taptic-engine/master/taptic-6s-plus.jpg" width="541px" height="350px"/>
 
 ## Supported platforms
