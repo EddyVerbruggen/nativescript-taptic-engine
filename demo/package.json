@@ -1,16 +1,16 @@
 {
   "nativescript": {
-    "id": "org.nativescript.demo",
+    "id": "org.nativescript.plugindemo.tapticengine",
     "tns-android": {
-      "version": "2.3.0"
+      "version": "3.0.1"
     },
     "tns-ios": {
-      "version": "2.3.0"
+      "version": "3.0.1"
     }
   },
   "dependencies": {
-    "nativescript-taptic-engine": "file:..",
-    "tns-core-modules": "^2.3.0"
+    "nativescript-taptic-engine": "file:///Users/eddyverbruggen/sandboxes/nativescript-taptic-engine",
+    "tns-core-modules": "^3.0.0"
   },
   "devDependencies": {
     "babel-traverse": "6.12.0",
@@ -18,7 +18,7 @@
     "babylon": "6.8.4",
     "filewalker": "0.1.2",
     "lazy": "1.0.11",
-    "nativescript-dev-typescript": "^0.3.2",
-    "typescript": "^1.8.10"
+    "nativescript-dev-typescript": "~0.4.5",
+    "typescript": "^2.3.0"
   }
 }

@@ -72,14 +72,14 @@ export class TapticEngineUnofficial extends Common {
       AudioServicesPlaySystemSound(1519);
       resolve();
     });
-  };
+  }
 
   public strongBoom(): Promise<any> {
     return new Promise((resolve, reject) => {
       AudioServicesPlaySystemSound(1520);
       resolve();
     });
-  };
+  }
 
   public burst(): Promise<any> {
     return new Promise((resolve, reject) => {

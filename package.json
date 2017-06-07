@@ -1,6 +1,6 @@
 {
   "name": "nativescript-taptic-engine",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Taptic Engine, the subtle iPhone vibration engine. Available since iPhone 6s (Plus).",
   "main": "taptic-engine",
   "typings": "index.d.ts",
@@ -19,7 +19,11 @@
     "demo.ios.device": "npm run preparedemo && cd demo && tns run ios",
     "demo.android": "npm run preparedemo && cd demo && tns run android",
     "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-taptic-engine && tns plugin add .. && tns install",
-    "setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
+    "prepublish": "npm run build",
+    "setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd ..",
+    "tslint": "tslint *.ts",
+    "tslint.demo": "tslint demo/app/*.ts",
+    "test": "npm run build && npm run tslint && npm run tslint.demo && cd demo && tns build ios"
   },
   "repository": {
     "type": "git",
@@ -47,11 +51,10 @@
   "homepage": "https://github.com/EddyVerbruggen/nativescript-taptic-engine",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "tns-core-modules": "^2.3.0",
-    "tns-platform-declarations": "^2.3.0",
-    "typescript": "^1.8.10"
-  },
-  "dependencies": {
-    "tns-core-modules": "^2.3.0"
+    "nativescript-dev-typescript": "^0.4.0",
+    "tns-core-modules": "^3.0.0",
+    "tns-platform-declarations": "^3.0.0",
+    "typescript": "^2.3.0",
+    "tslint": "^5.1.0"
   }
 }

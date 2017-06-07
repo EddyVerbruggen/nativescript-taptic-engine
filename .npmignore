@@ -1,9 +1,12 @@
 .idea
 .vscode
 demo/
+.gitignore
+.travis.yml
 *.jpg
 *.png
 *.log
 *.map
+*.json
 *.ts
 !*.d.ts
