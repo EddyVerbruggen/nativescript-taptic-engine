@@ -23,7 +23,7 @@
     "setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd ..",
     "tslint": "tslint *.ts",
     "tslint.demo": "tslint demo/app/*.ts",
-    "test": "npm run build && npm run tslint && npm run tslint.demo && cd demo && tns build ios"
+    "test": "npm run build && npm run tslint && npm run tslint.demo"
   },
   "repository": {
     "type": "git",
