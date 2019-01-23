@@ -13,7 +13,7 @@
 [twitter-image]:https://img.shields.io/twitter/follow/eddyverbruggen.svg?style=social&label=Follow%20me
 [twitter-url]:https://twitter.com/eddyverbruggen
 
-<img src="https://raw.githubusercontent.com/EddyVerbruggen/nativescript-taptic-engine/master/taptic-6s-plus.jpg" width="541px" height="350px"/>
+<img src="https://raw.githubusercontent.com/EddyVerbruggen/nativescript-taptic-engine/master/media/taptic-6s-plus.jpg" width="541px" height="350px"/>
 
 ## Supported platforms
 * Official API: iPhone 7 / 7 Plus or newer
@@ -32,7 +32,7 @@ Want to dive in quickly? Check out [the demo app](demo)! Otherwise, continue rea
 
 You can run the demo app from the root of the project by typing `npm run demo.ios.device` and you'll see this:
 
-<img src="https://raw.githubusercontent.com/EddyVerbruggen/nativescript-taptic-engine/master/demo-app.png" width="375px"/>
+<img src="https://raw.githubusercontent.com/EddyVerbruggen/nativescript-taptic-engine/master/media/demo-app.png" width="375px"/>
 
 
 ## Official API (requires at least iPhone 7)
