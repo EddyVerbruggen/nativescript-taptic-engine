@@ -47,6 +47,9 @@ cd nativescript-taptic-engine/src
 npm run demo-vue.ios
 ```
 
+## Using Angular?
+There's nothing that prevents you from using Angular. Just copy the examples in the Vue or Core demo (or the snippets below).
+
 ## Official API (requires at least iPhone 7)
 It's recommended to use this API, but you're limited to iPhone 7 and higher.
 As per [Apples guidelines](https://developer.apple.com/reference/uikit/uifeedbackgenerator)
@@ -171,5 +174,6 @@ This triggers the 'Nope' effect you get when fi. force touching a home icon whic
 Codewise this is exactly the same as `weakBoom` and `strongBoom`, except for the function name of course.
 
 ## Changelog
+* 2.1.0  Modernized the code a little, migrated to the plugin seed structure, and added a Vue demo.
 * 2.0.0  Added official API for iPhone 7. Moved the old API to TapticEngineUnofficial.*. Requires Xcode 8 to build.
 * 1.0.0  Initial release, unofficial API only. Compatible with any Xcode version.
