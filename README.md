@@ -27,13 +27,25 @@ From the command prompt go to your app's root folder and execute:
 tns plugin add nativescript-taptic-engine
 ```
 
-## Demo app
+## Demo app (NativeScript Core, XML)
 Want to dive in quickly? Check out [the demo app](demo)! Otherwise, continue reading.
 
 You can run the demo app from the root of the project by typing `npm run demo.ios.device` and you'll see this:
 
 <img src="https://raw.githubusercontent.com/EddyVerbruggen/nativescript-taptic-engine/master/media/demo-app.png" width="375px"/>
 
+## Demo app (NativeScript-Vue)
+We also have a Vue demo! Check out [the demo-vue app](demo-vue)!
+
+<img src="https://raw.githubusercontent.com/EddyVerbruggen/nativescript-taptic-engine/master/media/demo-vue-app.png" width="375px"/>
+
+To run it locally:
+
+```bash
+git clone https://github.com/EddyVerbruggen/nativescript-taptic-engine
+cd nativescript-taptic-engine/src
+npm run demo-vue.ios
+```
 
 ## Official API (requires at least iPhone 7)
 It's recommended to use this API, but you're limited to iPhone 7 and higher.

@@ -8,18 +8,20 @@
       "version": "5.0.0"
     }
   },
+  "scripts": {
+    "build.plugin": "cd ../src && npm run build",
+    "ci.tslint": "npm i && tslint --config '../tslint.json' 'app/**/*.ts' --exclude '**/node_modules/**'"
+  },
   "dependencies": {
     "nativescript-taptic-engine": "file:../src",
     "tns-core-modules": "~5.1.2"
   },
   "devDependencies": {
-    "babel-traverse": "6.26.0",
-    "babel-types": "6.26.0",
-    "babylon": "6.18.0",
-    "filewalker": "0.1.2",
-    "lazy": "1.0.11",
+    "nativescript-css-loader": "~0.26.1",
     "nativescript-dev-typescript": "~0.7.9",
+    "nativescript-dev-webpack": "~0.19.0",
     "tns-platform-declarations": "~5.1.2",
+    "tslint": "~5.11.0",
     "typescript": "~3.1.1"
   }
 }

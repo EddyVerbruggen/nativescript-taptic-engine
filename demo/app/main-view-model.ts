@@ -1,4 +1,4 @@
-import {Observable} from "data/observable";
+import {Observable} from "tns-core-modules/data/observable";
 import {TapticEngine, TapticEngineUnofficial, TapticEngineNotificationType, TapticEngineImpactStyle} from "nativescript-taptic-engine";
 
 export class HelloWorldModel extends Observable {
