@@ -11,22 +11,33 @@ export enum TapticEngineImpactStyle {
 }
 
 export interface TapticEngineNotificationOptions {
-    /**
-     * Pick a fitting TapticEngineNotificationType.
-     * Default: TapticEngineNotificationType.SUCCESS
-     */
-    type?: TapticEngineNotificationType;
+  /**
+   * Pick a fitting TapticEngineNotificationType.
+   * Default: TapticEngineNotificationType.SUCCESS
+   */
+  type?: TapticEngineNotificationType;
 }
 
 export interface TapticEngineImpactOptions {
-    /**
-     * Pick a fitting TapticEngineImpactStyle.
-     * Default: TapticEngineImpactStyle.MEDIUM
-     */
-    style?: TapticEngineImpactStyle;
+  /**
+   * Pick a fitting TapticEngineImpactStyle.
+   * Default: TapticEngineImpactStyle.MEDIUM
+   */
+  style?: TapticEngineImpactStyle;
 }
 
-export class Common {
-  constructor() {
-  }
+export declare class TapticEngine {
+  notification(arg?: TapticEngineNotificationOptions): Promise<any>;
+
+  impact(arg?: TapticEngineImpactOptions): Promise<any>;
+
+  selection(): Promise<any>;
+}
+
+export declare class TapticEngineUnofficial {
+  weakBoom(): Promise<any>;
+
+  strongBoom(): Promise<any>;
+
+  burst(): Promise<any>;
 }

@@ -17,7 +17,7 @@ export class HelloWorldModel extends Observable {
       type: TapticEngineNotificationType.SUCCESS
     }).then(() => {
       console.log("Notification (success) done, if avail");
-    }, (err) => {
+    }, () => {
       console.log("This is Android / iOS sim / iOS < 10");
     });
   }
@@ -27,7 +27,7 @@ export class HelloWorldModel extends Observable {
       type: TapticEngineNotificationType.WARNING
     }).then(() => {
       console.log("Notification (warning) done, if avail");
-    }, (err) => {
+    }, () => {
       console.log("This is Android / iOS sim / iOS < 10");
     });
   }
@@ -37,7 +37,7 @@ export class HelloWorldModel extends Observable {
       type: TapticEngineNotificationType.ERROR
     }).then(() => {
       console.log("Notification (error) done, if avail");
-    }, (err) => {
+    }, () => {
       console.log("This is Android / iOS sim / iOS < 10");
     });
   }
@@ -45,7 +45,7 @@ export class HelloWorldModel extends Observable {
   public doSelection() {
     this.tapticEngine.selection().then(() => {
       console.log("Selection done, if avail");
-    }, (err) => {
+    }, () => {
       console.log("This is Android / iOS sim / iOS < 10");
     });
   }
@@ -55,7 +55,7 @@ export class HelloWorldModel extends Observable {
       style: TapticEngineImpactStyle.LIGHT
     }).then(() => {
       console.log("Impact (light) done, if avail");
-    }, (err) => {
+    }, () => {
       console.log("This is Android / iOS sim / iOS < 10");
     });
   }
@@ -65,7 +65,7 @@ export class HelloWorldModel extends Observable {
       style: TapticEngineImpactStyle.MEDIUM
     }).then(() => {
       console.log("Impact (medium) done, if avail");
-    }, (err) => {
+    }, () => {
       console.log("This is Android / iOS sim / iOS < 10");
     });
   }
@@ -75,7 +75,7 @@ export class HelloWorldModel extends Observable {
       style: TapticEngineImpactStyle.HEAVY
     }).then(() => {
       console.log("Impact (heavy) done, if avail");
-    }, (err) => {
+    }, () => {
       console.log("This is Android / iOS sim / iOS < 10");
     });
   }
@@ -83,7 +83,7 @@ export class HelloWorldModel extends Observable {
   public doWeakBoom() {
     this.tapticEngineUnofficial.weakBoom().then(() => {
       console.log("Boomed weakly, if avail");
-    }, (err) => {
+    }, () => {
       console.log("U on Android? :)");
     });
   }
@@ -91,7 +91,7 @@ export class HelloWorldModel extends Observable {
   public doStrongBoom() {
     this.tapticEngineUnofficial.strongBoom().then(() => {
       console.log("Boomed strongly, if avail");
-    }, (err) => {
+    }, () => {
       console.log("U on Android? :)");
     });
   }
@@ -99,7 +99,7 @@ export class HelloWorldModel extends Observable {
   public doBurst() {
     this.tapticEngineUnofficial.burst().then(() => {
       console.log("Bursted, if avail");
-    }, (err) => {
+    }, () => {
       console.log("U on Android? :)");
     });
   }

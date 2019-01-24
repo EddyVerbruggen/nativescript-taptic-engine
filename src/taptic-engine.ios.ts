@@ -1,28 +1,33 @@
 export * from "./taptic-engine.common";
 
-import {Common, TapticEngineNotificationOptions, TapticEngineNotificationType, TapticEngineImpactOptions, TapticEngineImpactStyle} from "./taptic-engine.common";
+import {
+  TapticEngine as TapticEngineBase,
+  TapticEngineImpactOptions,
+  TapticEngineImpactStyle,
+  TapticEngineNotificationOptions,
+  TapticEngineNotificationType,
+  TapticEngineUnofficial as TapticEngineUnofficialBase
+} from "./taptic-engine.common";
 
-declare var AudioServicesPlaySystemSound,
-    UISelectionFeedbackGenerator,
-    UIImpactFeedbackGenerator, UIImpactFeedbackStyleLight, UIImpactFeedbackStyleMedium, UIImpactFeedbackStyleHeavy,
-    UINotificationFeedbackGenerator, UINotificationFeedbackTypeSuccess, UINotificationFeedbackTypeWarning, UINotificationFeedbackTypeError;
+declare const AudioServicesPlaySystemSound, UISelectionFeedbackGenerator,
+    UIImpactFeedbackGenerator, UINotificationFeedbackGenerator;
 
-export class TapticEngine extends Common {
+export class TapticEngine implements TapticEngineBase {
 
   public notification(arg?: TapticEngineNotificationOptions): Promise<any> {
     return new Promise((resolve, reject) => {
-      let generator = UINotificationFeedbackGenerator.new();
+      const generator = UINotificationFeedbackGenerator.new();
       if (generator === null) {
-        reject ("Unsupported Operating System");
+        reject("Unsupported Operating System");
         return;
       }
 
-      let feedbackType = UINotificationFeedbackTypeSuccess;
+      let feedbackType = UINotificationFeedbackType.Success;
       if (arg) {
         if (arg.type === TapticEngineNotificationType.WARNING) {
-          feedbackType = UINotificationFeedbackTypeWarning;
+          feedbackType = UINotificationFeedbackType.Warning;
         } else if (arg.type === TapticEngineNotificationType.ERROR) {
-          feedbackType = UINotificationFeedbackTypeError;
+          feedbackType = UINotificationFeedbackType.Error;
         }
       }
       generator.notificationOccurred(feedbackType);
@@ -32,18 +37,18 @@ export class TapticEngine extends Common {
 
   public impact(arg?: TapticEngineImpactOptions): Promise<any> {
     return new Promise((resolve, reject) => {
-      let feedbackStyle = UIImpactFeedbackStyleMedium;
+      let feedbackStyle = UIImpactFeedbackStyle.Medium;
       if (arg) {
         if (arg.style === TapticEngineImpactStyle.LIGHT) {
-          feedbackStyle = UIImpactFeedbackStyleLight;
+          feedbackStyle = UIImpactFeedbackStyle.Light;
         } else if (arg.style === TapticEngineImpactStyle.HEAVY) {
-          feedbackStyle = UIImpactFeedbackStyleHeavy;
+          feedbackStyle = UIImpactFeedbackStyle.Heavy;
         }
       }
 
-      let generator = UIImpactFeedbackGenerator.alloc().initWithStyle(feedbackStyle);
+      const generator = UIImpactFeedbackGenerator.alloc().initWithStyle(feedbackStyle);
       if (generator === null) {
-        reject ("Unsupported Operating System");
+        reject("Unsupported Operating System");
         return;
       }
 
@@ -54,9 +59,9 @@ export class TapticEngine extends Common {
 
   public selection(): Promise<any> {
     return new Promise((resolve, reject) => {
-      let generator = UISelectionFeedbackGenerator.new();
+      const generator = UISelectionFeedbackGenerator.new();
       if (generator === null) {
-        reject ("Unsupported Operating System");
+        reject("Unsupported Operating System");
         return;
       }
 
@@ -66,7 +71,7 @@ export class TapticEngine extends Common {
   }
 }
 
-export class TapticEngineUnofficial extends Common {
+export class TapticEngineUnofficial implements TapticEngineUnofficialBase {
   public weakBoom(): Promise<any> {
     return new Promise((resolve, reject) => {
       AudioServicesPlaySystemSound(1519);

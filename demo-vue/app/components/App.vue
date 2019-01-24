@@ -71,43 +71,43 @@
       doNotificationSuccess() {
         tapticEngine.notification({type: TapticEngineNotificationType.SUCCESS})
             .then(() => console.log("Notification (success) done, if avail"))
-            .catch(err => console.log("This is Android / iOS sim / iOS < 10, err: " + err))
+            .catch(err => console.log("This is Android / iOS sim / iOS < 10, err"))
       },
 
       doNotificationWarning() {
         tapticEngine.notification({type: TapticEngineNotificationType.WARNING})
             .then(() => console.log("Notification (warning) done, if avail"))
-            .catch(err => console.log("This is Android / iOS sim / iOS < 10, err: " + err))
+            .catch(err => console.log("This is Android / iOS sim / iOS < 10"))
       },
 
       doNotificationError() {
         tapticEngine.notification({type: TapticEngineNotificationType.ERROR})
             .then(() => console.log("Notification (error) done, if avail"))
-            .catch(err => console.log("This is Android / iOS sim / iOS < 10, err: " + err))
+            .catch(err => console.log("This is Android / iOS sim / iOS < 10"))
       },
 
       doImpactLight() {
         tapticEngine.impact({style: TapticEngineImpactStyle.LIGHT})
             .then(() => console.log("Impact (light) done, if avail"))
-            .catch(err => console.log("This is Android / iOS sim / iOS < 10, err: " + err))
+            .catch(err => console.log("This is Android / iOS sim / iOS < 10"))
       },
 
       doImpactMedium() {
         tapticEngine.impact({style: TapticEngineImpactStyle.MEDIUM})
             .then(() => console.log("Impact (medium) done, if avail"))
-            .catch(err => console.log("This is Android / iOS sim / iOS < 10, err: " + err))
+            .catch(err => console.log("This is Android / iOS sim / iOS < 10, err"))
       },
 
       doImpactHeavy() {
         tapticEngine.impact({style: TapticEngineImpactStyle.HEAVY})
             .then(() => console.log("Impact (heavy) done, if avail"))
-            .catch(err => console.log("This is Android / iOS sim / iOS < 10, err: " + err))
+            .catch(err => console.log("This is Android / iOS sim / iOS < 10, err"))
       },
 
       doSelection() {
         tapticEngine.selection()
             .then(() => console.log("Selection done, if avail"))
-            .catch(err => console.log("This is Android / iOS sim / iOS < 10, err: " + err))
+            .catch(err => console.log("This is Android / iOS sim / iOS < 10, err"))
       }
 
     }
