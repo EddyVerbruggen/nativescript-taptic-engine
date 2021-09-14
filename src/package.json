@@ -1,13 +1,13 @@
 {
   "name": "nativescript-taptic-engine",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Taptic Engine, the subtle iPhone vibration engine. Available since iPhone 6s (Plus).",
   "main": "taptic-engine",
   "typings": "index.d.ts",
   "nativescript": {
     "platforms": {
-      "android": "2.3.0",
-      "ios": "2.3.0"
+      "android": "7.0.0",
+      "ios": "7.0.0"
     }
   },
   "scripts": {
@@ -48,10 +48,10 @@
   "homepage": "https://github.com/EddyVerbruggen/nativescript-taptic-engine",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "nativescript-dev-typescript": "^0.4.0",
-    "tns-core-modules": "^3.0.0",
-    "tns-platform-declarations": "^3.0.0",
-    "typescript": "^2.3.0",
-    "tslint": "^5.1.0"
+    "@nativescript/core": "^8.0.0",
+    "@nativescript/types": "^8.0.0",
+    "@nativescript/webpack": "^3.0.0",
+    "typescript": "~4.0.7",
+    "tslint": "^5.12.1"
   }
 }

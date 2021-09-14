@@ -9,9 +9,6 @@ import {
   TapticEngineUnofficial as TapticEngineUnofficialBase
 } from "./taptic-engine.common";
 
-declare const AudioServicesPlaySystemSound, UISelectionFeedbackGenerator,
-    UIImpactFeedbackGenerator, UINotificationFeedbackGenerator;
-
 export class TapticEngine implements TapticEngineBase {
 
   public notification(arg?: TapticEngineNotificationOptions): Promise<any> {
